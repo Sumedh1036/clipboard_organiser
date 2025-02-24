@@ -1,0 +1,16 @@
+{
+    "manifest_version": 3,
+    "name": "Smart Clipboard Organizer",
+    "version": "1.1",
+    "description": "Save and manage clipboard content (Text, Links, Images) easily!",
+    "permissions": ["storage", "contextMenus", "clipboardRead", "clipboardWrite"],
+    "background": {
+      "service_worker": "background.js"
+    },
+    "action": {
+      "default_popup": "popup.html",
+      "default_icon": "icon.png"
+    },
+    "host_permissions": ["<all_urls>"]
+  }
+  
