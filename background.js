@@ -13,12 +13,12 @@ chrome.contextMenus.onClicked.addListener((info) => {
         if (info.selectionText) {
             type = "text";
             content = info.selectionText;
-        } else if (info.linkUrl) {
-            type = "link";
-            content = info.linkUrl;
         } else if (info.srcUrl) {
             type = "image";
             content = info.srcUrl;
+        } else if (info.linkUrl) {
+            type = "link";
+            content = info.linkUrl;
         }
 
         if (content) {
